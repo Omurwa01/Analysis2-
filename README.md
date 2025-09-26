@@ -1,12 +1,49 @@
 # CORD-19 Data Science Assignment
 
 ## Overview
-This project analyzes the metadata from the CORD-19 Research Challenge dataset. It includes data cleaning, exploratory analysis, visualizations, and an interactive Streamlit app for filtering and viewing results.
+This project analyzes the metadata from the CORD-19 Research Challenge dataset. It supports both CSV and JSON formats with automatic file detection, includes data cleaning, exploratory analysis, and generates visualizations.
+
+## Features
+- ✅ **Flexible Data Loading**: Automatically detects and loads CSV or JSON files
+- ✅ **Error Handling**: Robust error handling for missing files and dependencies  
+- ✅ **Data Analysis**: Comprehensive analysis of study types, field distributions, and word frequencies
+- ✅ **Visualizations**: Generates charts and word clouds automatically
+- ✅ **Virtual Environment**: Uses isolated Python environment for dependencies
 
 ## Dataset
-The dataset used is `metadata.csv` from the CORD-19 Research Challenge on Kaggle: [https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
+The dataset used is from the CORD-19 Research Challenge on Kaggle: [https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
 
-Download the file and place it in the project directory.
+**Supported file formats:**
+- `metadata.csv` (original CSV format)
+- `CORD-19-research-challenge-metadata.json` (JSON metadata format)
+
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Omurwa01/Analysis2-.git
+cd Analysis2-
+```
+
+### 2. Create Virtual Environment
+```bash
+python -m venv .venv
+```
+
+### 3. Activate Virtual Environment
+**Windows:**
+```bash
+.venv\Scripts\activate
+```
+**Mac/Linux:**
+```bash
+source .venv/bin/activate
+```
+
+### 4. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
 ## Requirements
 - Python 3.x
